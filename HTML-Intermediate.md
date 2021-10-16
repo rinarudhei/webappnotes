@@ -153,6 +153,82 @@
 
 [back to top](#route)
 
+### <a id="Sectioning"></a>**Sectioning**
+- **article** and **section**
+```html
+<article>
+    <section id="intro">
+        <p>[An introduction]</p>
+    </section>
+    <section id="main_content">
+        <p>[Content]</p>
+    </section>
+    <section id="related">
+        <ul>
+            <li><a href="that.html">That related article</a></li>
+            <li><a href="this.html">This related article</a></li>
+        </ul>
+    </section>
+</article>
+```
+- **Headers and Footers**
+
+```html
+<body>
+<article>
+    <header>
+        <h1>Alternatively&hellip;</h1>
+        <p>[An introduction]</p>
+    </header>
+    <section id="main_content">
+        <p>[Content]</p>
+    </section>
+    <footer>
+        <p>[End notes]</p>
+    </footer>
+</article>
+<footer>
+    <p>[Copyright bumf]</p>
+</footer>
+</body>
+```
+- **aside**
+```html
+<section id="main_content">
+    <h1>Tixall</h1>
+    <p>[All about Tixall]</p>
+    <aside>
+        <h2>Tixall Obelisk</h2>
+        <p>[A short note about Tixall Obelisk]</p>
+    </aside>
+    <p>[Maybe a bit more about Tixall]</p>
+</section>
+```
+- While we’re at this structure-love, if you want to include figures, there happens to be two tags for doing just that:
+
+```html
+<figure>
+    <img src="obelisk.jpg">
+    <figcaption>Tixall Obelisk</figcaption>
+</figure>
+```
+Note that the img element doesn’t need an **alt** attribute **IF** the **figcaption** (that’s “figure caption”, in case you need it spelling out) does that job.
+- **nav**
+```html
+<nav id="main_nav">
+    <ul>
+        <li><a href="/tutorials/">Tutorials</a></li>
+        <li><a href="/techniques/">Techniques</a></li>
+        <li><a href="/examples/">Examples</a></li>
+        <li><a href="/references/">References</a></li>
+    </ul>
+</nav>
+```
+- If you want to style these new HTML 5 elements (and you probably do, right? It’s much nicer than using ``<div id="content">``..., etc) you will experience a problem in older browsers, most notably Internet Explorer versions 8 and earlier, that don’t understand these tags.
+    - HTML5Shiv can come to your rescue, however; a small piece of JavaScript, slotted in to your head element, that teaches the remedial browsers and holds their hands so that you can use new HTML 5 tags and style them up to your heart’s content with CSS.
+
+[back to top](#route)
+
 
 
 
