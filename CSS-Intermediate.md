@@ -4,15 +4,14 @@
 - **Date:** `10/17/2021`
 - **Link: https://htmldog.com/guides/**
 - **Contents:**
-  - [Time, Mark, Presentational](#Time-Mark-Presentational)
-  - [Table: Columns, Header & Footer](#Table)
-  - [Accessible Links](#Accessible-Links)
-  - [Accessible Forms](#Accessible-Forms)
-  - [HTML Form Part1: More Attributes](#HTML5-Part1)
-  - [HTML Form Part2: Input Types](#HTML5-Part2)
-  - [Embedded Content](#Embedded-Content)
+  - [Pseudo Classes](#Pseudo-Classes)
+  - [Shorthand Properties](#Shorthand-Properties)
+  - [CSS Property: Background](#CSS-Background)
+  - [Display](#Display)
+  - [Pseudo Elements](#Pseudo-Elements)
+  - [Page Layout](#Page-Layout)
 
-### **Pseudo Classes**
+### <a id="Pseudo-Classes"></a>**Pseudo Classes**
 #### **Links**
   - **link**, targeting unvisited links, and **visited**, targeting, you guessed it, visited links, are the most basic pseudo classes.
 ```css
@@ -67,7 +66,8 @@ http://www.example.com/index.html#section2
 - **:nth-of-type()**
 - **:nth-child()**
 
-### **Shorthand Properties**
+[back to top](#Page-Layout)
+### <a id="Shorthand-Properties"></a>**Shorthand Properties**
 - **margin & padding**
 ```css
 p {
@@ -88,8 +88,8 @@ p {
     font: italic bold 12px/2 courier;
 }
 ```
-
-### **CSS Property: Background**
+[back to top](#Page-Layout)
+### <a id="CSS-Background"></a>**CSS Property: Background**
 ```css
 .shorthand1 { url("bg.jpg") 20% 0% / 99px 33px repeat-y fixed content-box padding-box #fff; }
 /* ...is the equivalent of... */
@@ -117,7 +117,8 @@ p {
     background-clip: initial; /* (border-box) */
 }
 ```
-### **Display**
+[back to top](#Page-Layout)
+### <a id="Display"></a>**Display**
 - **inline**
   - Displays an element as an inline element. Any height and width properties will have no effect.
 - **inline-block**
@@ -128,13 +129,15 @@ p {
   - Display nothing
 - **display: none** and **visibility: hidden** vary in that **display: none** takes the element’s box completely out of play, whereas **visibility: hidden** keeps the box and its flow in place without visually representing its contents. For example, if the second paragraph of 3 were set to **display: none**, the first paragraph would run straight into the third whereas if it were set to **visibility: hidden**, there would be a gap where the paragraph should be.
 
-### **Pseudo Elements**
+[back to top](#Page-Layout)
+### <a id="Pseudo-Elements"></a>**Pseudo Elements**
 - **::first-letter**
 - **::first-line**
 - **::before** & **::after**
   - The **before** and **after** pseudo elements are used in conjunction with the content property to place content either side of a box without touching the HTML.
 
-## **Page Layout**
+[back to top](#Page-Layout)
+### <a id="Page-Layout"></a>**Page Layout**
 #### **Positioning**
 - **static** is the default value and renders a box in the normal order of things, as they appear in the HTML.
 - **relative** is much like static but the box can be offset from its original position with the properties top, right, bottom and left.
