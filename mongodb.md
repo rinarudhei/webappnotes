@@ -5,12 +5,12 @@
 - semi structured data, dokumen pertama atau kedua tidak harus sama bentuk datanya.
 
 ## RDB VS MONGODB
-
 table - collection
 coloumn - field
 row/record - document
 join - embedded document / reference
 sql - javascript
+transaction - no transaction
 
 ## Database Methods
 db.dropDatabase()
